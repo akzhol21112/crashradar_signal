@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2 БОТ "СИГНАЛЫ" TJ</title>
+  <title>Ruslan TEAM "SIGNAL"</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
   :root{
@@ -66,9 +66,9 @@
 <body>
   <div class="wrap">
     <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/1200px-Flag_of_Morocco.svg.png" class="flag" alt="Kenya"/>
-      <div class="title">TJ "ОСНОВНОЙ" bot</div>
-      <div class="subtitle">Fast signals • Made in Morocco • MAD</div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg" class="flag" alt="Kenya"/>
+      <div class="title">Ruslan TEAM "SIGNAL" bot</div>
+      <div class="subtitle">Fast signals • Made in Tajikistan • TJS</div>
 
       <div class="badges">
         <div class="badge">🔒 Safe</div>
@@ -88,9 +88,9 @@
       </div>
 
       <label class="block" for="acc">Account ID</label>
-      <input id="acc" class="input" placeholder="Example: 9876543210" maxlength="10" inputmode="numeric" />
-      <div class="hint">digits 10 • MAD currency</div>
-      <div class="warn" id="warn">Please enter the correct 10 digit ID</div>
+      <input id="acc" class="input" placeholder="Example: 9876543210" maxlength="8" inputmode="numeric" />
+      <div class="hint">digits 8 • TJS currency</div>
+      <div class="warn" id="warn">Please enter the correct 8 digit ID</div>
 
       <button class="btn" id="start" disabled>Start</button>
       <div class="progress" id="progress"><div class="bar"></div></div>
@@ -102,13 +102,13 @@
         <div id="minesBoard" class="mines-board" style="display:none;"></div>
       </div>
 
-      <a class="cta" id="depositLink" href="https://reffpa.com/L?tag=d_5017583m_21123c_&site=5017583&ad=21123&r=registration" target="_blank">💳 Make a deposit</a>
+      <a class="cta" id="depositLink" href="https://easyflowrp.com/lDzZaxmX/">💳 Make a deposit</a>
 
       <div class="meta">
         <div>🔵 Online: <span id="online">143</span></div>
       </div>
 
-      <div class="footer">MADE IN <strong>Karim Team</strong> • Morocco</div>
+      <div class="footer">MADE IN <strong>Ruslan Team</strong> • Tajikistan</div>
     </div>
   </div>
 
@@ -136,7 +136,7 @@
     acc.addEventListener('input', ()=>{
       // strip non-digits (keeps UX clean)
       acc.value = acc.value.replace(/\D/g,'').slice(0,10);
-      const ok = /^\d{10}$/.test(acc.value);
+      const ok = /^\d{8}$/.test(acc.value);
       start.disabled = !ok;
       warn.style.display = ok ? 'none' : 'block';
     });
